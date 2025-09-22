@@ -19,8 +19,12 @@ public class Eight {
         double low = 0, high = x;
         while (high - low > epsilon) {
             double mid = (low + high) / 2;
-            high = mid * mid * mid > x ? mid : high;
-            low = mid * mid * mid > x ? low : mid;
+            if (mid * mid * mid > x) {
+                high = mid;
+            }
+            if (mid * mid * mid <= x) {
+                low = mid;
+            }
         }
         return (low + high) / 2;
     }

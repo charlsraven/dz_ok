@@ -11,13 +11,15 @@ public class One {
         try (Scanner in = new Scanner(System.in)) {
             int a = in.nextInt();
             int b = in.nextInt();
+            int ans;
             if (a > b) {
-                System.out.println(a + b);
+                ans = a + b;
             } else if (a == b) {
-                System.out.println(a * b);
+                ans = a * b;
             } else {
-                System.out.println(a - b);
+                ans = a - b;
             }
+            System.out.println(ans);
         }
     }
 }

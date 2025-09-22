@@ -10,17 +10,19 @@ public class Two {
         try (Scanner in = new Scanner(System.in)) {
             int x = in.nextInt();
             int y = in.nextInt();
+            String ans;
             if (x == 0 || y == 0) {
-                System.out.println("one of coordinates is zero");
+                ans = "one of coordinates is zero";
             } else if (x > 0 && y > 0) {
-                System.out.println("first");
+                ans = "first";
             } else if (x < 0 && y > 0) {
-                System.out.println("second");
+                ans = "second";
             } else if (x < 0) {
-                System.out.println("third");
+                ans = "third";
             } else {
-                System.out.println("fourth");
+                ans = "fourth";
             }
+            System.out.println(ans);
         }
     }
 }

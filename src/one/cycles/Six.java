@@ -19,6 +19,7 @@ public class Six {
                 b = a + b;
                 a = b - a;
             }
+            System.out.println(b);
         }
     }
 }
