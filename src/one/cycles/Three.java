@@ -9,7 +9,11 @@ public class Three {
     public static void main(String[] args) {
         try (Scanner in = new Scanner(System.in)) {
             int a = in.nextInt();
-            System.out.println((int) Math.sqrt(a) - 1);
+            /*
+            Количество положительных целых чисел, квадрат которых меньше заданного положительного числа A,
+            равно целой части квадратного корня из (A - 1)
+             */
+            System.out.println((int) Math.sqrt(a - 1));
         }
     }
 }

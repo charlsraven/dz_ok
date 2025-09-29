@@ -15,7 +15,7 @@ public class Two {
 
     private static void del(int a) {
         if (a <= 0 || a > 1000) {
-            System.out.println("неверные входные данные");
+            System.out.println("illegal argument");
             return;
         }
         for (int i = a; i <= 1000; i += a) {

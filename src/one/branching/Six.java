@@ -8,15 +8,15 @@ import java.util.Scanner;
 public class Six {
     public static void main(String[] args) {
         try (Scanner in = new Scanner(System.in)) {
-            System.out.println("введите x");
+            System.out.println("enter x");
             int x = in.nextInt();
-            System.out.println("введите y");
+            System.out.println("enter y");
             int y = in.nextInt();
-            System.out.println("введите r");
+            System.out.println("enter r");
             int r = in.nextInt();
-            System.out.println("введите x0");
+            System.out.println("enter x0");
             int x0 = in.nextInt();
-            System.out.println("введите y0");
+            System.out.println("enter y0");
             int y0 = in.nextInt();
             if (Math.sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0)) <= r) {
                 System.out.println("in circle");

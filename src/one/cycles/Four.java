@@ -16,7 +16,7 @@ public class Four {
                     break;
                 }
             }
-            System.out.println(nd == a ? "число а простое" : nd);
+            System.out.println(nd == a ? "number a is simple" : nd);
         }
     }
 }
